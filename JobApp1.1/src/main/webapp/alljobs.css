@@ -1,0 +1,272 @@
+/* ========================================
+   ALL JOBS PAGE
+======================================== */
+
+.all-jobs-page {
+    min-height: 100vh;
+    padding: 55px 30px 80px;
+    background: #f4f7fb;
+}
+
+
+/* ========================================
+   PAGE HEADING
+======================================== */
+
+.all-jobs-page .page-title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #172554;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.all-jobs-page .page-subtitle {
+    text-align: center;
+    font-size: 26px;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+
+/* ========================================
+   JOB GRID
+======================================== */
+
+.job-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+
+/* ========================================
+   JOB CARD
+======================================== */
+
+.job-card {
+    position: relative;
+
+    background: #212529;
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 42px 40px;
+
+    min-height: 390px;
+
+    box-sizing: border-box;
+
+    border-top: 7px solid #0d6efd;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Card hover */
+
+.job-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================
+   JOB TITLE
+======================================== */
+
+.job-card h2 {
+    margin: 0 0 22px;
+
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   JOB INFORMATION
+======================================== */
+
+.job-info {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.job-info strong {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.job-description {
+    margin-bottom: 22px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #e5e7eb;
+}
+
+.job-description strong {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   EXPERIENCE
+======================================== */
+
+.job-experience {
+    margin-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.job-experience strong {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   TECH STACK TITLE
+======================================== */
+
+.tech-title {
+    margin-bottom: 12px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   TECH STACK
+======================================== */
+
+.tech-stack {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+
+/* Remove normal bullet points */
+
+.tech-stack li {
+    list-style: none;
+
+    background: #0d6efd;
+
+    color: white;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   JOB CARD BOTTOM LINE
+======================================== */
+
+.job-card::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 18px;
+    left: 50%;
+
+    width: 40px;
+    height: 2px;
+
+    transform: translateX(-50%);
+
+    background: #343a40;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .job-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+    }
+
+    .all-jobs-page .page-title {
+        font-size: 36px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 576px) {
+
+    .all-jobs-page {
+        padding: 35px 15px 50px;
+    }
+
+    .all-jobs-page .page-title {
+        font-size: 30px;
+    }
+
+    .all-jobs-page .page-subtitle {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .job-card {
+        padding: 30px 25px;
+        min-height: auto;
+    }
+
+    .job-card h2 {
+        font-size: 21px;
+    }
+
+    .job-description,
+    .job-experience,
+    .job-info {
+        font-size: 15px;
+    }
+
+    .tech-stack li {
+        font-size: 13px;
+        padding: 6px 11px;
+    }
+}

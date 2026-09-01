@@ -1,0 +1,390 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    background: #ffc107 !important;
+    padding: 14px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .container {
+    max-width: 1400px;
+}
+
+.navbar-brand {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar-nav {
+    gap: 8px;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    color: #111827 !important;
+
+    padding: 10px 18px !important;
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.75);
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   MAIN SECTION
+===================================================== */
+
+.container.mt-5 {
+    max-width: 1100px;
+    margin-top: 75px !important;
+}
+
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.container.mt-5::before {
+    content: "Find Your Next Opportunity";
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 46px;
+    font-weight: 750;
+
+    color: #172554;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   HERO DESCRIPTION
+===================================================== */
+
+.container.mt-5::after {
+    content: "Explore jobs, discover opportunities and take the next step in your career.";
+
+    display: block;
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   ROW
+===================================================== */
+
+.row {
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+
+/* =====================================================
+   COLUMNS
+===================================================== */
+
+.col-md-6 {
+    padding: 12px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card {
+    position: relative;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    min-height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-shadow:
+            0 10px 30px rgba(15, 23, 42, 0.07);
+
+    transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease,
+            border-color 0.3s ease;
+}
+
+
+/* Top colored line */
+
+.card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #0d6efd;
+}
+
+
+/* Hover */
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+            0 18px 40px rgba(15, 23, 42, 0.13);
+
+    border-color: #dbeafe;
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.card-body {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 45px 30px;
+}
+
+
+/* =====================================================
+   CARD ICON
+===================================================== */
+
+.card-body::before {
+    display: block;
+
+    font-size: 52px;
+
+    margin-bottom: 22px;
+
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* View Jobs icon */
+
+.col-md-6:first-child .card-body::before {
+    content: "🔎";
+}
+
+
+/* Add Job icon */
+
+.col-md-6:last-child .card-body::before {
+    content: "➕";
+}
+
+
+/* Icon animation */
+
+.card:hover .card-body::before {
+    transform: scale(1.12);
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn-primary {
+    border: none !important;
+
+    background: #0d6efd !important;
+
+    padding: 13px 32px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    min-width: 150px;
+
+    box-shadow:
+            0 6px 15px rgba(13, 110, 253, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+
+/* Button hover */
+
+.btn-primary:hover {
+    background: #0b5ed7 !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+            0 9px 20px rgba(13, 110, 253, 0.35);
+}
+
+
+/* Button click */
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   DIFFERENT COLOR FOR ADD JOB
+===================================================== */
+
+.col-md-6:last-child .card::before {
+    background: #198754;
+}
+
+.col-md-6:last-child .btn-primary {
+    background: #198754 !important;
+
+    box-shadow:
+            0 6px 15px rgba(25, 135, 84, 0.25);
+}
+
+.col-md-6:last-child .btn-primary:hover {
+    background: #157347 !important;
+
+    box-shadow:
+            0 9px 20px rgba(25, 135, 84, 0.35);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 24px !important;
+    }
+
+    .navbar-nav {
+        margin-top: 12px;
+    }
+
+    .nav-link {
+        padding: 9px 12px !important;
+    }
+
+    .container.mt-5 {
+        margin-top: 50px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container.mt-5::before {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .container.mt-5::after {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .col-md-6 {
+        padding: 10px;
+    }
+
+    .card {
+        min-height: 220px;
+    }
+
+    .card-body {
+        padding: 35px 20px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .navbar-brand {
+        font-size: 21px !important;
+    }
+
+    .container.mt-5::before {
+        font-size: 29px;
+    }
+
+    .container.mt-5::after {
+        font-size: 15px;
+    }
+
+    .card {
+        min-height: 200px;
+    }
+
+    .card-body::before {
+        font-size: 44px;
+    }
+
+}

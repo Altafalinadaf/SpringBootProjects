@@ -1,0 +1,225 @@
+/* =========================================
+   SUCCESS / JOB DETAILS PAGE
+========================================= */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #212529;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.success-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+    text-align: center;
+}
+
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.success-container h1 {
+    margin: 0 0 10px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #172554;
+}
+
+.success-container h2 {
+    margin: 0 0 40px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+
+/* =========================================
+   JOB CARD
+========================================= */
+
+.job-details-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 45px 50px;
+
+    background: #212529;
+    color: white;
+
+    border-radius: 18px;
+    border-top: 6px solid #198754;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   REMOVE ANY PSEUDO ICON
+========================================= */
+
+.job-details-card::before,
+.job-details-card::after,
+.job-details-card .card-body::before,
+.job-details-card .card-body::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* =========================================
+   JOB PROFILE
+========================================= */
+
+.job-details-card h3 {
+    margin: 0 0 25px;
+
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.job-details-card p {
+    margin: 18px 0;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #f1f5f9;
+}
+
+.job-details-card p strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TECH STACK TITLE
+========================================= */
+
+.tech-title {
+    margin-top: 30px !important;
+    margin-bottom: 12px !important;
+
+    font-size: 18px !important;
+    font-weight: 700;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   TECH STACK LIST
+========================================= */
+
+.tech-stack {
+    margin: 0;
+    padding-left: 25px;
+
+    color: #f8fafc;
+}
+
+.tech-stack li {
+    margin: 8px 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.success-message {
+    margin-bottom: 35px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #198754;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.success-container .btn-primary {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 13px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0d6efd;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.success-container .btn-primary:hover {
+    background: #084298;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .success-container {
+        padding: 45px 15px 60px;
+    }
+
+    .success-container h1 {
+        font-size: 34px;
+    }
+
+    .success-container h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .job-details-card {
+        padding: 35px 25px;
+        width: 100%;
+    }
+
+    .job-details-card h3 {
+        font-size: 25px;
+    }
+
+    .job-details-card p {
+        font-size: 16px;
+    }
+}
